@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://nexablog-platform.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://nexablog-platform.vercel.app',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     title: 'NexaBlog - Modern Blog Platform',
     description: 'A modern, scalable, informational blog website designed for creators and businesses.',
     siteName: 'NexaBlog',
