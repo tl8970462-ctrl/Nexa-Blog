@@ -16,7 +16,7 @@
     background-color: #2563eb;
     color: white;
     font-weight: 600;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 2rem;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
     transform: scale(1);
@@ -30,7 +30,18 @@
   }
   
   .btn-secondary {
-    @apply bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-medium py-2 px-4 rounded-lg transition-all duration-200;
+    background-color: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #2563eb;
+    color: white;
   }
   
   .card {
