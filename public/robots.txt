@@ -1,0 +1,54 @@
+# Robots.txt for NexaBlog Platform
+
+# Allow all robots to index all pages
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nexablog-platform.vercel.app/sitemap.xml
+
+# Crawl delay to be respectful to servers
+Crawl-delay: 1
+
+# Disallow crawling of admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+
+# Disallow crawling of search parameters
+Disallow: /*?*
+Disallow: /*&*
+
+# Allow important file types
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+
+# Google AdsBot
+User-agent: AdsBot-Google
+Allow: /
+
+# Googlebot Image
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: bingbot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
